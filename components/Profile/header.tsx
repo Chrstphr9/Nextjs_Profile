@@ -15,13 +15,14 @@ const ProfileCard = () => {
         </div>
         
          <div className="flex gap-x-2 items-center justify-center  bg-white/20 rounded-2xl ">
-              <button className=" backdrop-blur-sm text-white text-sm px-4 py-2 rounded-xl hover:bg-white/30 transition-all duration-200 font-medium">
-                Call Sam 
-              </button>
-              <button className="backdrop-blur-sm text-white text-sm px-4 py-2 rounded-xl hover:bg-white/30 transition-all duration-200 font-medium">
+             <button className="backdrop-blur-sm text-white text-sm px-4 py-2 rounded-xl font-medium cursor-pointer">
+  Call Sam
+</button>
+
+              <button className="backdrop-blur-sm text-white text-sm px-4 py-2 rounded-xl font-medium cursor-pointer">
                 Send Email
               </button>
-              <button className="backdrop-blur-sm text-white text-sm px-4 py-2 rounded-xl hover:bg-white/30 transition-all duration-200 font-medium">
+          <button className="backdrop-blur-sm text-white text-sm px-4 py-2 rounded-xl font-medium cursor-pointer">
                 Save Contact
               </button>
             </div>
