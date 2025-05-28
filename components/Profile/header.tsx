@@ -41,10 +41,10 @@ const ProfileCard = () => {
 
                 {/* Bottom action buttons */}
                 <div className="flex gap-3">
-                    <button className="flex-1 bg-black hover:bg-gray-800 text-white py-3 px-6 rounded-full text-sm font-medium transition-colors">
+                    <button className="flex-1 bg-black hover:bg-gray-800 text-white py-3 px-6 rounded-full text-lg font-medium transition-colors">
                         Connect Back
                     </button>
-                    <button className="flex-1 bg-green-300 hover:bg-green-500 text-black py-3 px-6 rounded-full text-sm font-medium transition-colors">
+                    <button className="flex-1 bg-green-200 text-green-500 py-3 px-6 rounded-full text-lg font-medium transition-colors">
                         Pay Me
                     </button>
                 </div>
