@@ -35,8 +35,8 @@ const ProfileCard = () => {
 
             <div className="pt-16 px-6 pb-6">
                 <h2 className="text-xl font-semibold text-gray-900 mb-3">About Me</h2>
-                <p className="text-gray-700 text-sm mb-6 leading-relaxed">
-                    I Love everything Tech and I love eating parfait ö the beach.
+                <p className="text-gray-700 text-md font-medium mb-6 leading-relaxed">
+                    I love everything Tech and I love eating parfait ö the beach.
                 </p>
 
                 {/* Bottom action buttons */}
