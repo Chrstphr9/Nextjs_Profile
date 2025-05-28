@@ -29,7 +29,7 @@ const MySocials = () => {
         </div>
         
         <div className="flex flex-col items-center">
-          <div className="w-12 h-12 rounded-full bg-red-600 flex items-center justify-center mb-2">
+          <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center mb-2">
             <Image src={Youtube} alt='Youtube' width={50} height={50}  />
           </div>
           <span className="text-xs text-gray-700 text-center">YouTube</span>
