@@ -1,12 +1,13 @@
 'use client';
 import React, { useState } from 'react';
 import { Check, ChevronDown } from 'lucide-react';
+import Image from 'next/image';
 
 export default function ConnectForm() {
   const [email, setEmail] = useState('');
   const [name, setName] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false); 
   const [selectedCountry, setSelectedCountry] = useState('NG');
 
   const countries = [
@@ -21,6 +22,8 @@ export default function ConnectForm() {
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4 pattern">
       <div className="bg-white rounded-2xl shadow-lg p-8 w-full max-w-md">
+        <img src='https://res.cloudinary.com/cyclops-information-systems/image/upload/v1639027761/figocard/logo_green_50h_oclbov.png' alt=''
+          className='w-[220px] mb-[10px]' />
         <h1 className="text-2xl font-semibold text-gray-900 mb-8">Connect With Me</h1>
         
         <div className="space-y-6">
@@ -114,11 +117,11 @@ export default function ConnectForm() {
           <div className="text-center">
             <p className="text-xs text-gray-500">
               By connecting you agree to our{' '}
-              <a href="#" className="font-medium text-gray-700 hover:underline">
+              <a href="https://figocard.com/terms" target="_blank" className="font-medium text-gray-700 hover:underline ">
                 Terms of Use
               </a>{' '}
               and{' '}
-              <a href="#" className="font-medium text-gray-700 hover:underline">
+              <a href="https://figocard.com/privacy" target="_blank" className="font-medium text-gray-700 hover:underline ">
                 Privacy Policy
               </a>
             </p>

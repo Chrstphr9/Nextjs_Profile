@@ -1,4 +1,5 @@
 'use client'
+import { Contact } from "@/lib/type";
 import React from 'react';
 import Instagram from '../../public/instagram.png'
 import Linkedin from '../../public/linkedin.png'
@@ -8,21 +9,23 @@ import Whatsapp from '../../public/whatsapp.png'
 import Image from 'next/image';
 import Snapchat from '../../public/snapchat.png'
 import Facebook from '../../public/facebook.png'
+import Link from "next/link";
 
-const MySocials = () => {
+const MySocials = async ({ userInfo }: { userInfo: Contact }) =>{
     
   return (
     <div className="w-full max-w-md mx-auto p-6 bg-white shadow-lg">
       <h2 className="text-xl font-semibold text-gray-900 mb-6">My Socials</h2>
       <div className="grid grid-cols-4 grid-rows-2 gap-4">
   {/* Row 1 */}
+  <Link href={userInfo.tikTokLink} target="_blank" rel="noopener noreferrer">
   <div className="flex flex-col items-center">
     <div className="w-12 h-12 rounded-full  flex items-center justify-center mb-2 cursor-pointer">
       <Image src={Tiktok} alt='Linkedin' width={50} height={50} className='rounded-4xl'/>
     </div>
     <span className="text-xs font-medium text-gray-700 text-center">Tiktok</span>
   </div>
-
+</Link>
   <div className="flex flex-col items-center">
     <div className="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center mb-2 cursor-pointer">
       <Image src={Linkedin} alt='Linkedin' width={50} height={50} />
